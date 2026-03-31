@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum - CO₂ Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+  <a class="navbar-brand d-flex align-items-center" href="index.html">
+    <img src="assets/logo.png" alt="Logo" class="logo me-2">
+    CO₂ Tracker
+  </a>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html">Startseite</a></li>
+      <li class="nav-item"><a class="nav-link" href="daten.html">Daten</a></li>
+      <li class="nav-item"><a class="nav-link" href="ueber-uns.html">Über uns</a></li>
+    </ul>
+
+    <button id="themeToggle" class="btn btn-outline-light ms-3">Dark Mode</button>
+  </div>
+</nav>
+
+<main class="container py-5">
+  <h1>Impressum</h1>
+
+  <p><strong>Fiktive Organisation für Klimaschutz</strong><br>
+  Musterstraße 12<br>
+  12345 Musterstadt<br>
+  Deutschland</p>
+
+  <p><strong>Vertreten durch:</strong><br>
+  Max Mustermann</p>
+
+  <p><strong>Kontakt:</strong><br>
+  E-Mail: info@fiktive-organisation.de</p>
+
+  <p><strong>Hinweis:</strong><br>
+  Diese Website ist ein studentisches Projekt der IU Internationale Hochschule.
+  Alle dargestellten Daten sind fiktiv.</p>
+</main>
+
+<footer class="text-center p-3">
+  <a href="impressum.html">Impressum</a> |
+  <a href="datenschutz.html">Datenschutz</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const toggleBtn = document.getElementById("themeToggle");
+toggleBtn?.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+  toggleBtn.textContent =
+    document.body.classList.contains("dark-mode")
+      ? "Light Mode"
+      : "Dark Mode";
+});
+</script>
+
+</body>
+</html>
