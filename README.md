@@ -102,7 +102,7 @@ Die Screenshots zeigen:
 ## Live‑Version
 Die Website ist über GitHub Pages erreichbar unter:
 
-**https://IP1993.github.io/co2-tracker/**
+**https://IP1993.github.io/co2-tracker-IU/**
 
 ---
 
